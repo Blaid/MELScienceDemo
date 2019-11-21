@@ -1,0 +1,16 @@
+<resources>
+    <string name="atmText">Банкомат</string>
+    <string name="selectCurrencyText">Выберите валюту</string>
+    <string name="calculateText">Расчитать</string>
+    <string name="endlessBanknotesText">Бесконеные банкноты</string>
+    <string name="enterAmountText">Введите сумму</string>
+    <string name="closeText">Закрыть</string>
+    <string name="errorCalculateBanknotesText">Невозможно расчитать количество банкнот. Введите другую сумму.</string>
+    <string name="unknownErrorText">Неизвестная ошибка</string>Unknown error
+
+    <string-array name="currencyTypes" >
+        <item>Большие</item>
+        <item>Маленькие</item>
+        <item>Разные</item>
+    </string-array>
+</resources>

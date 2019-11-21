@@ -1,0 +1,122 @@
+[
+  {
+    "name": "EUR",
+    "banknotes": [
+      {
+        "nominal": 5,
+        "amount": 10
+      },
+      {
+        "nominal": 10,
+        "amount": 3
+      },
+      {
+        "nominal": 20,
+        "amount": 20
+      },
+      {
+        "nominal": 50,
+        "amount": 11
+      },
+      {
+        "nominal": 100,
+        "amount": 13
+      },
+      {
+        "nominal": 200,
+        "amount": 45
+      },
+      {
+        "nominal": 500,
+        "amount": 4
+      }
+    ]
+  },
+  {
+    "name": "USD",
+    "banknotes": [
+      {
+        "nominal": 1,
+        "amount": 9
+      },
+      {
+        "nominal": 5,
+        "amount": 5
+      },
+      {
+        "nominal": 10,
+        "amount": 46
+      },
+      {
+        "nominal": 20,
+        "amount": 1
+      },
+      {
+        "nominal": 50,
+        "amount": 7
+      },
+      {
+        "nominal": 100,
+        "amount": 17
+      }
+    ]
+  },
+  {
+    "name": "RUB",
+    "banknotes": [
+      {
+        "nominal": 50,
+        "amount": 15
+      },
+      {
+        "nominal": 100,
+        "amount": 7
+      },
+      {
+        "nominal": 200,
+        "amount": 2
+      },
+      {
+        "nominal": 500,
+        "amount": 28
+      },
+      {
+        "nominal": 1000,
+        "amount": 46
+      },
+      {
+        "nominal": 5000,
+        "amount": 1
+      }
+    ]
+  },
+  {
+    "name": "WTF",
+    "banknotes": [
+      {
+        "nominal": 3,
+        "amount": 32
+      },
+      {
+        "nominal": 5,
+        "amount": 1
+      },
+      {
+        "nominal": 7,
+        "amount": 2
+      },
+      {
+        "nominal": 13,
+        "amount": 3
+      },
+      {
+        "nominal": 17,
+        "amount": 4
+      },
+      {
+        "nominal": 23,
+        "amount": 5
+      }
+    ]
+  }
+]

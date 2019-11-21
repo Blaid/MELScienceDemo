@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name" translatable="false">MELScienceTest</string>
+    <string name="atmText">ATM</string>
+    <string name="selectCurrencyText">Select currency</string>
+    <string name="calculateText">Calculate</string>
+    <string name="endlessBanknotesText">Endless banknotes</string>
+    <string name="enterAmountText">Enter amount</string>
+    <string name="closeText">Close</string>
+    <string name="errorCalculateBanknotesText">Unable to calculate the number of banknotes. Enter a different amount.</string>
+    <string name="unknownErrorText">Unknown error</string>
+
+    <string-array name="currencyTypes" >
+        <item>Big</item>
+        <item>Small</item>
+        <item>Different</item>
+    </string-array>
+</resources>

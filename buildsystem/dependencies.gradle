@@ -1,0 +1,61 @@
+allprojects {
+  repositories {
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    maven { url "https://www.jitpack.io" }
+    maven { url 'https://maven.fabric.io/public' }
+    mavenCentral()
+    jcenter()
+    google()
+  }
+}
+
+ext {
+  //Android
+  androidBuildToolsVersion        = "29.0.2"
+  androidMinSdkVersion            = 21
+  androidTargetSdkVersion         = 29
+  androidCompileSdkVersion        = 29
+
+  appCompatVersion                = '1.1.0-rc01'
+  constraintLayoutVersion         = '2.0.0-beta1'
+  conductorVersion                = '3.0.0-rc2'
+  materialVersion                 = '1.1.0-alpha07'
+  rxJavaVersion                   = '2.2.8'
+  rxAndroidVersion                = '2.1.1'
+  moxyVersion                     = '1.5.5'
+  daggerVersion                   = '2.22.1'
+  koinVersion                     = '2.1.0-alpha-2'
+  gsonVersion                     = '2.8.5'
+
+  kotlinVersion                   = '1.3.+'
+  coreKtxVersion                  = '1.0.2'
+
+  // Testing
+  jUnitVersion                    = '4.12'
+  mockitoVersion                  = '3.1.0'
+  mockitoKotlinVersion            = '2.2.0'
+
+  dependencies = [
+          appcompat:                  "androidx.appcompat:appcompat:${appCompatVersion}",
+          constraintLayout:           "androidx.constraintlayout:constraintlayout:${constraintLayoutVersion}",
+          conductor:                  "com.bluelinelabs:conductor:${conductorVersion}",
+          material:                   "com.google.android.material:material:${materialVersion}",
+          rxJava:                     "io.reactivex.rxjava2:rxjava:${rxJavaVersion}",
+          rxAndroid:                  "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}",
+          moxy:                       "com.arello-mobile:moxy:${moxyVersion}",
+          moxyCompiler:               "com.arello-mobile:moxy-compiler:${moxyVersion}",
+          daggerCompiler:             "com.google.dagger:dagger-compiler:${daggerVersion}",
+          dagger:                     "com.google.dagger:dagger:${daggerVersion}",
+          koin:                       "org.koin:koin-android:${koinVersion}",
+          koinAndroidScope:           "org.koin:koin-android-scope:${koinVersion}",
+          gson:                       "com.google.code.gson:gson:${gsonVersion}",
+          kotlinStdlibJdk7:           "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${kotlinVersion}",
+          coreKtx:                    "androidx.core:core-ktx:${coreKtxVersion}"
+  ]
+
+  testDependencies = [
+          jUnit:                      "junit:junit:${jUnitVersion}",
+          mockitoCore:                "org.mockito:mockito-core:${mockitoVersion}",
+          mockitoKotlin:              "com.nhaarman.mockitokotlin2:mockito-kotlin:${mockitoKotlinVersion}",
+  ]
+}

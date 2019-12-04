@@ -101,8 +101,11 @@ class MainPresenterTest {
 
   @Test
   fun testOpenCurrency() {
-    presenter.currencyAction()
+    with(presenter) {
+      selectedCurrencyAction(EUR_CURRENCY_NAME)
+      currencyAction()
+    }
 
-    verify(navigator).openCurrency()
+    verify(navigator).openCurrency(EUR_CURRENCY_NAME)
   }
 }

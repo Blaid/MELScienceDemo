@@ -14,6 +14,7 @@ import org.junit.Before
 import org.junit.Test
 
 private const val BACK_WITHOUT_RESULT = ""
+private const val TEST_CURRENCY_NAME = "EUR"
 
 class CurrencyPresenterTest {
   private lateinit var presenter: CurrencyPresenter
@@ -34,7 +35,8 @@ class CurrencyPresenterTest {
   private val testModelCurrencies = listOf(
     CurrencyModel(
       name = "EUR",
-      banknotes = arrayOf()
+      banknotes = arrayOf(),
+      checked = true
     ),
     CurrencyModel(
       name = "RUB",
@@ -50,6 +52,7 @@ class CurrencyPresenterTest {
     navigator = mock()
 
     presenter = CurrencyPresenter(
+      params = CurrencyPresenter.Params(TEST_CURRENCY_NAME),
       currencyInteractor = CurrencyInteractor(
         currencyRepository = mock {
           on { getCurrencies() } doReturn Single.just(testDomainCurrencies)
